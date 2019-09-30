@@ -48,7 +48,17 @@ html {
 	text-align: left;
 	font-size: 18px;
 	line-height: 30px;
-	background: #ff00ff;
+#	background: #ff00ff;
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url("./img/greeble-ship(w).png") 30 round;
+}
+#borderimg2 { 
+  border: 10px solid transparent;
+  padding: 15px;
+  -webkit-border-image: url(./img/greeble-ship(w).png) 30 stretch; /* Safari 3.1-5 */
+  -o-border-image: url(./img/greeble-ship(w).png) 30 stretch; /* Opera 11-12.1 */
+  border-image: url(./img/greeble-ship(w).png) 30 stretch;
 }
 .body-todo {
 	position: relative;
