@@ -38,7 +38,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  background: #c6c6cb;
+  background: #1e1e1e;
 }
 # .hero-image {
 #  background-image: url("../img/WorldDump000.jpg");
@@ -100,13 +100,14 @@ html {
 	width: 60%;
 	min-width: 500px;
 	max-width: 150000px;
-	background: #ff00ff;
+	background: #ef4f4f;
 	border: 2px solid #ccc;
 }
 .title {
 	position: center;
 	margin-left: auto;
 	margin-right: auto;
+	color: #ef4f4f;
 	margin-bottom: 50px;
 #	background: #ff00ff;
 	text-align: center;		
