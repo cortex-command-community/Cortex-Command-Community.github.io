@@ -93,6 +93,7 @@ html {
 }
 .body-todo {
 	position: relative;
+	color: white;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 150px;
@@ -100,8 +101,8 @@ html {
 	width: 60%;
 	min-width: 500px;
 	max-width: 150000px;
-	background: #ef4f4f;
-	border: 2px solid #ccc;
+	background: #222222;
+	border: 2px solid #ef4f4f;
 }
 .title {
 	position: center;
