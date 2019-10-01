@@ -72,7 +72,7 @@ html {
 	font-size: 15px;
 	line-height: 30px;
 	border-image: url("./img/greeble-ship(w).png") 30 round;
-	background-image: url("../img/Empty16XBG.png");
+	background-image: url("../img/TutL3BG.png");
 	background-repeat: repeat;
 #	background: #b7b7b7;
 
@@ -80,7 +80,7 @@ html {
 .nav-test {
 	position: fixed;
 	top: -120px;
-	left: -43px;
+	left: -46px;
 	text-align: left;
 #	background: #ff00ff;
 }
