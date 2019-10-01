@@ -72,8 +72,9 @@ html {
 	font-size: 15px;
 	line-height: 30px;
 	border-image: url("./img/greeble-ship(w).png") 30 round;
-	background-image: url("../img/TutL3BG.png");
+	background-image: url("../img/TutL2BG.png");
 	background-repeat: repeat;
+	background-size: contain, cover;
 #	background: #b7b7b7;
 
 }
