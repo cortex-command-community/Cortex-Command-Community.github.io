@@ -78,6 +78,14 @@ html {
 #	background: #b7b7b7;
 
 }
+.header {
+	padding: 60px;
+	text-align: center;
+	background: #1abc9c;
+	color: white;
+	font-size: 30px;
+	background-image: url("../img/Header.jpg");
+}
 .nav-test {
 	position: fixed;
 	top: -120px;
