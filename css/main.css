@@ -123,6 +123,10 @@ html {
 	text-align: center;		
 
 }
+
+.container {
+  min-height: 82.4vh;
+}
 	
 ::selection {
   background: #b3d4fc;
