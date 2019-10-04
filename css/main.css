@@ -98,13 +98,6 @@ html {
 	text-align: left;
 #	background: #ff00ff;
 }
-.borderimg2 { 
-  border: 10px solid transparent;
-  padding: 15px;
-  -webkit-border-image: url(./img/greeble-ship(w).png) 30 stretch; /* Safari 3.1-5 */
-  -o-border-image: url(./img/greeble-ship(w).png) 30 stretch; /* Opera 11-12.1 */
-  border-image: url(./img/greeble-ship(w).png) 30 stretch;
-}
 .body-todo {
 	position: relative;
 	color: white;
@@ -123,7 +116,7 @@ html {
 	margin-left: auto;
 	margin-right: auto;
 	color: #ef4f4f;
-	margin-bottom: 50px;
+#	margin-bottom: 50px;
 #	background: #ff00ff;
 	text-align: center;		
 
