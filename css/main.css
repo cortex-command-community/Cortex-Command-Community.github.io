@@ -65,7 +65,7 @@ html {
 }
 .nav-text {
 	position: fixed;
-	top: 70px;
+	top: 150px;
 	left: 0px;
 	padding-left: 15px;
 	text-align: left;
@@ -82,18 +82,19 @@ html {
 	text-align: center;
 	color: white;
 	font-size: 30px;
+	padding-bottom: 10px;
 	background-image: url("../img/header.jpg");
 	background-repeat: repeat;
 	background-size: contain, cover;
 }
 .header-img {
-  width: 100%;
+  width: 105%;
   background: url('../img/header.jpg');
   background-size: cover;
 }
 .nav-test {
 	position: fixed;
-	top: -120px;
+	top: -40px;
 	left: -46px;
 	text-align: left;
 #	background: #ff00ff;

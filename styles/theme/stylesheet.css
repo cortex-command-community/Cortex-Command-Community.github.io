@@ -16,8 +16,8 @@ body {
 	color: #FFF;
 	background: #242424 url(images/body.gif);
 	font-size: 10px;
-	padding: 30px 5px;
-	margin: 5vh;
+	/*padding: 30px 5px;
+	margin: 5vh; */
 }
 #body-simple {
 	background: #191919;
