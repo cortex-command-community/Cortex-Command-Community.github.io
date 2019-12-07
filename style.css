@@ -72,6 +72,9 @@ header {
 .section-two > .container > .dev-blog {
     background: white;
 }
+.welcome {
+		background: #e7e5e5;
+}
 .nav {
     width: 1070px;
     margin-left: auto;
