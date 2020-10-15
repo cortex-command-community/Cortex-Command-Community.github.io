@@ -33,7 +33,8 @@ function PageBody() {
                         <div id="main-content" style={{
                             maxWidth: '800px',
                             backgroundColor: '#242424',
-                            margin: '-400px auto',
+                            // TODO: On large screen sizes this should go on top of the banner image.
+                            margin: '0 auto',
                             padding: '50px',
                             boxSizing: 'border-box',
                             fontSize: '16pt',

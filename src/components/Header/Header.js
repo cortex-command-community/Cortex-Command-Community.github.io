@@ -3,8 +3,7 @@ import './Header.css';
 
 function Header() {
     return (
-        <div style={{
-            backgroundImage: 'linear-gradient(#4a1f19, #4a1f19, #4a1f19, #2e0a00, #2e0a00, #2e0a00)',
+        <div className='header' style={{
             borderTop: '4px solid #f9de8f',
             borderBottom: '1px solid black',
             boxSizing: 'border-box',
@@ -13,11 +12,11 @@ function Header() {
             textAlign: 'center',
             color: 'white',
             fontSize: '30px',
-            height: '60px',
-            fontFamily: '"Montserrat", sans-serif'
+            fontFamily: '"Montserrat", sans-serif',
         }}>
             <ul style={{
                 display: 'flex',
+                flexWrap: 'wrap',
                 margin: 'auto',
                 padding: '0',
                 maxWidth: '800px',

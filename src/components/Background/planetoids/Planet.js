@@ -1,33 +1,42 @@
 import React from 'react';
 import './Station.css';
 
+const stationHeight = 27;
+
 function Planet(props) {
     return (
         <div style={{
             display: 'block',
             height: 'auto',
             width: 'auto',
-            maxHeight: '550px',
-            maxWidth: '550px',
+            maxHeight: props.planetHeight + stationHeight,
+            maxWidth: props.planetHeight + 2 * stationHeight,
             margin: 'auto',
             position: 'sticky',
-            top: props.yCenter - 275,
-            marginTop: '-275px',
+            top: props.yCenter - (props.planetHeight + stationHeight) / 2,
+            marginTop: - (props.planetHeight + stationHeight) / 2,
             zIndex: '9',
-            marginBottom: '250px'
+            marginBottom: '250px',
+            textAlign: 'center',
         }}>
             <div style={{
-                left: '50%',
-                transform: 'translate(-50%, 0)',
-                position: 'relative',
+                position: 'absolute',
+                top: - stationHeight,
+                bottom: - stationHeight,
+                width: '100%',
                 zIndex: '10',
-                textAlign: 'center'
+                overflow: 'hidden',
+                textAlign: 'initial'
             }}>
                 <img src='./station.png' className='station' alt="" style={{
-                    transformOrigin: `0 ${550 / 2 + 27}px`,
+                    transformOrigin: `0 ${props.planetHeight / 2 + stationHeight}px`,
                 }}/>
             </div>
             <img src='./planet.png' alt="" style={{
+                height: '100%',
+                width: '100%',
+                maxHeight: props.planetHeight,
+                maxWidth: props.planetHeight,
             }} />
         </div>
     );
