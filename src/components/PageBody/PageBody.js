@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../Header/Header';
 import Content from '../Content/Content';
+import './PageBody.css';
 
 function PageBody() {
     return (
@@ -30,16 +31,14 @@ function PageBody() {
                         <img src='./banner.png' alt='' style={{
                             width: '100%',
                         }}></img>
-                        <div id="main-content" style={{
+                        <div id="main-content" class="main-content" style={{
                             maxWidth: '800px',
                             backgroundColor: '#242424',
-                            // TODO: On large screen sizes this should go on top of the banner image.
-                            margin: '0 auto',
                             padding: '50px',
                             boxSizing: 'border-box',
                             fontSize: '16pt',
                             zIndex: '10',
-                            position: 'relative',
+                            margin: 'auto',
                         }}>
                             <Content />
                         </div>
