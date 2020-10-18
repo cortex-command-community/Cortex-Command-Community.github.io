@@ -3,7 +3,7 @@ import Header from '../Header/Header';
 import Content from '../Content/Content';
 import './PageBody.css';
 
-function PageBody() {
+function PageBody(props) {
     return (
         <>
             <div style={{
@@ -15,7 +15,7 @@ function PageBody() {
                 zIndex: '100',
                 pointerEvents: 'none',
             }}>
-                <div style={{ height: 181 }} />
+                <div style={{ height: props.titleHeight }} />
                 <div style={{
                     position: 'relative',
                     pointerEvents: 'initial',
@@ -31,7 +31,7 @@ function PageBody() {
                         <img src='./banner.png' alt='' style={{
                             width: '100%',
                         }}></img>
-                        <div id="main-content" class="main-content" style={{
+                        <div id="main-content" className="main-content" style={{
                             maxWidth: '800px',
                             backgroundColor: '#242424',
                             padding: '50px',

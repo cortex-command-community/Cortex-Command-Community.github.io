@@ -6,11 +6,3 @@ p {
   padding: 0;
   margin: 0;
 }
-
-/* body, html {
-  scroll-snap-type: y mandatory
-}
-
-section {
-  scroll-snap-align: start;
-} */

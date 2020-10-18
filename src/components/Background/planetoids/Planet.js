@@ -10,11 +10,11 @@ function Planet(props) {
             height: 'auto',
             width: 'auto',
             maxHeight: props.planetHeight + stationHeight,
-            maxWidth: props.planetHeight + 2 * stationHeight,
+            maxWidth: props.planetHeight + (2 * stationHeight),
             margin: 'auto',
             position: 'sticky',
             top: props.yCenter - (props.planetHeight + stationHeight) / 2,
-            marginTop: - (props.planetHeight + stationHeight) / 2,
+            marginTop: -1 * (props.planetHeight + stationHeight) / 2,
             zIndex: '9',
             marginBottom: '250px',
             textAlign: 'center',
@@ -29,7 +29,7 @@ function Planet(props) {
                 textAlign: 'initial'
             }}>
                 <img src='./station.png' className='station' alt="" style={{
-                    transformOrigin: `0 ${props.planetHeight / 2 + stationHeight}px`,
+                    transformOrigin: `0 ${(props.planetHeight / 2) + stationHeight}px`,
                 }}/>
             </div>
             <img src='./planet.png' alt="" style={{

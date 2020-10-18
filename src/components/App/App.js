@@ -3,20 +3,18 @@ import './App.css';
 import Background from '../Background/Background';
 import PageBody from '../PageBody/PageBody';
 
+const titleHeight = 161; // Pixel height of title image
+
 function App() {
   return (
     <>
-      <Background></Background>
+      <Background titleHeight={titleHeight}></Background>
       <section style={{
         height: '100vh',
       }}>
       </section>
-      <section style={{
-        height: '20vh',
-      }}>
-      </section>
       <section>
-        <PageBody/>
+        <PageBody titleHeight={titleHeight}/>
       </section>
     </>
   );
