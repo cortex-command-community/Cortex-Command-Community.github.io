@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Title from './Title/Title';
 import Moon from './planetoids/Moon';
 import Planet from './planetoids/Planet';
-import MagicArrow from './MagicArrow/MagicArrow';
-// import Nebula from './Nebula/Nebula';
 
 function Background(props) {
     const titleHeight = props.titleHeight;
@@ -17,16 +15,8 @@ function Background(props) {
         return (Math.min(planetHeight, window.innerHeight) / 4);
     };
 
-    const calculateFinalOffset = () => {
-        return window.innerHeight - (titleHeight / 2) + calculateExtraPlanetOffset()
-    };
-
     const calculateTitleBreakpoints = () => {
-        return [0, (window.innerHeight / 2) + calculateExtraPlanetOffset(), calculateFinalOffset()]
-    }
-
-    const calculatePlanetBreakpoints = () => {
-        return [0, calculateFinalOffset()];
+        return [0, (window.innerHeight / 2) + calculateExtraPlanetOffset()]
     }
 
     const calculateInitialTitleOffset = () => {
@@ -48,19 +38,13 @@ function Background(props) {
     const calculateTitleY = () => {
         if (window.pageYOffset < calculateTitleBreakpoints()[1]) {
             return calculateInitialTitleOffset();
-        } else if (window.pageYOffset >= calculateTitleBreakpoints()[1] && window.pageYOffset < calculateTitleBreakpoints()[2]) {
-            return calculateInitialTitleOffset() + calculateTitleBreakpoints()[1] - window.pageYOffset;
         } else {
-            return titleHeight / 2;
+            return calculateInitialTitleOffset() + calculateTitleBreakpoints()[1] - window.pageYOffset;
         }
     };
 
     const calculatePlanetY = () => {
-        if (window.pageYOffset < calculatePlanetBreakpoints()[1]) {
-            return calculateInitialPlanetOffset() - window.pageYOffset;
-        } else {
-            return titleHeight / 2;
-        }
+        return calculateInitialPlanetOffset() - window.pageYOffset;
     };
 
     const calculateMoonY = () => {
@@ -98,15 +82,13 @@ function Background(props) {
             window.removeEventListener("resize", setOffset);
             window.removeEventListener("scroll", setOffset);
         }
-    }, []);
+    });
 
     return (
         <>
-            {/* <Nebula/> */}
             <Title yCenter={titleY} titleHeight={titleHeight} />
             <Planet yCenter={planetY} planetHeight={planetSize} />
             <Moon yCenter={moonY} xCenter={moonX} />
-            <MagicArrow />
         </>
     );
 }

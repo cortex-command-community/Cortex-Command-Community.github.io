@@ -5,7 +5,7 @@ const stationHeight = 27;
 
 function Planet(props) {
     return (
-        <div style={{
+        <div className="planet" style={{
             display: 'block',
             height: 'auto',
             width: 'auto',

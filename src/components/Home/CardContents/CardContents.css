@@ -1,0 +1,8 @@
+.card-contents, .card-contents h1 {
+    color: #f9de8f;
+}
+
+.card-contents h1 {
+    margin-top: 0;
+    font-size: 18pt;
+}
