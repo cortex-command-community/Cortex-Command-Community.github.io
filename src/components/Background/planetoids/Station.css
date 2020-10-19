@@ -1,0 +1,11 @@
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+.station {
+    animation: spin 30s linear infinite;
+    animation-delay: -20s;
+    position: relative;
+    top: 0px;
+    left: 50%;
+}

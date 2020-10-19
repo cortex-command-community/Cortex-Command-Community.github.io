@@ -1,0 +1,15 @@
+{
+  "short_name": "CCCP",
+  "name": "Cortex Command Community Project",
+  "icons": [
+    {
+      "src": "favicon.gif",
+      "sizes": "14x15",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,10 @@
+.title {
+    z-index: 100;
+    position: fixed;
+    max-width: 524px;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+}
