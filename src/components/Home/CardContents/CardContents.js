@@ -7,7 +7,7 @@ function CardContents(props) {
             display: 'flex', 
             flexDirection: props.right ? 'row-reverse' : 'initial',
         }}>
-            <div style={{ flexGrow: '1' }}>
+            <div style={{ flex: '1' }}>
                 <div style={{ 
                     padding: '8px 16px',
                 }}>

@@ -4,10 +4,12 @@ import './Footer.css';
 function Footer() {
     return (
         <div className='footer' style={{
-            height: '200px',
+            minHeight: '200px',
+            height: '100%',
             width: '100%',
-            marginTop: '48px',
             backgroundColor: "#242424",
+            padding: '12px',
+            boxSizing: 'border-box',
         }}>
             <div style={{
                 display: 'flex',

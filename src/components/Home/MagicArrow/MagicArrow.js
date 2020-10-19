@@ -4,13 +4,11 @@ function MagicArrow(props) {
     const onClick = () => {
         const sections = [
             { scrollTo: 'full-pager', viewCheck: 'full-pager'},
-            { scrollTo: 'scroll-anchor', viewCheck: 'card-container'},
-            
+            { scrollTo: 'scroll-anchor', viewCheck: 'card-container'},  
         ];
-        for (const section of sections) {
-            console.log(sections);
-            const viewCheck = document.getElementsByClassName(section.viewCheck)[0];
         
+        for (const section of sections) {
+            const viewCheck = document.getElementsByClassName(section.viewCheck)[0];
             if (viewCheck.getBoundingClientRect().bottom > window.innerHeight + 1) {
                 const scrollTo = document.getElementsByClassName(section.scrollTo)[0];
                 scrollTo.scrollIntoView({ block: 'start', behavior: 'smooth' });

@@ -22,10 +22,10 @@ function Home() {
                     height: '100vh',
                 }} />
                 {/* This div covers the scroll arrow for lower content. */}
-                <div style={{ 
-                    position: 'relative', 
-                    zIndex: '101', 
-                    backgroundColor: '#111' 
+                <div style={{
+                    position: 'relative',
+                    zIndex: '101',
+                    backgroundColor: '#111'
                 }}>
                     <div className='scroll-anchor' style={{ position: 'relative', top: '-80px' }} />
                     <CardContainer>
@@ -49,6 +49,7 @@ function Home() {
                             />
                         </Card>
                     </CardContainer>
+                    <div style={{ height: '48px', }}></div>
                     <Footer />
                 </div>
             </div>

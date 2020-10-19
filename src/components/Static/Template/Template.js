@@ -4,14 +4,21 @@ import Footer from '../../Footer/Footer';
 
 function Template(props) {
   return (
-    <div style={{ minHeight: '100%' }}>
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      minHeight: '100vh',
+    }}>
       <Header />
       <div style={{
         margin: 'auto',
-        padding: '0',
         maxWidth: '800px',
+        width: '100%',
+        flex: '1',
       }}>
-        {props.children}
+        <div style={{ padding: '0 8px', }}>
+          {props.children}
+        </div>
       </div>
       <Footer />
     </div>

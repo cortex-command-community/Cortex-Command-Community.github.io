@@ -13,3 +13,7 @@ h1, h2, h3 {
   font-weight: normal;
   font-family: "Montserrat", sans-serif;
 }
+
+ul {
+  margin: 0;
+}
