@@ -13,6 +13,7 @@ function Header() {
             color: 'white',
             fontSize: '30px',
             fontFamily: '"Montserrat", sans-serif',
+            fontWeight: 'bold',
         }}>
             <ul style={{
                 display: 'flex',
@@ -24,11 +25,12 @@ function Header() {
                 alignItems: 'center',
                 height: '100%',
             }}>
-                <li><a href="https://cortex-command-community.github.io/"><span>Home</span></a></li>
-                <li><a href="https://github.com/cortex-command-community"><span>Downloads</span></a></li>
-                <li><a href="http://wiki.datarealms.com/Cortex_Command"><span>Wiki</span></a></li>
-                <li><a href="https://github.com/cortex-command-community/Cortex-Command-Community-Project-Source/issues"><span>Issues</span></a></li>
-                <li><a href="http://forums.datarealms.com/"><span>Fan Forums</span></a></li>
+                <li><a href="./"><span>Home</span></a></li>
+                <li><a href="./downloads"><span>Downloads</span></a></li>
+                <li><a href="./get-involved"><span>Get Involved</span></a></li>
+                {/* <li><a href="http://wiki.datarealms.com/Cortex_Command"><span>Wiki</span></a></li> */}
+                {/* <li><a href="https://github.com/cortex-command-community/Cortex-Command-Community-Project-Source/issues"><span>Issues</span></a></li> */}
+                {/* <li><a href="http://forums.datarealms.com/"><span>Fan Forums</span></a></li> */}
             </ul>
         </div>
     );

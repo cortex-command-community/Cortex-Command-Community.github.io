@@ -1,10 +1,10 @@
 .header li {
-    border-left: 1px solid black;
-    border-right: 1px solid #5c3e3e;
     flex-grow: 1;
     height: 100%;
     list-style-type: none;
     height: 60px;
+    border-left: 1px solid black;
+    border-right: 1px solid #5c3e3e;
 }
 
 .header, .header li {

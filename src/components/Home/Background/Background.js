@@ -2,11 +2,9 @@ import React, { useEffect, useState } from 'react';
 import Title from './Title/Title';
 import Moon from './planetoids/Moon';
 import Planet from './planetoids/Planet';
-import MagicArrow from './MagicArrow/MagicArrow';
-// import Nebula from './Nebula/Nebula';
 
-function Background(props) {
-    const titleHeight = props.titleHeight;
+function Background() {
+    const titleHeight = 151; // Pixel height of title image
     const planetHeight = 550; // Pixel size of planet image, 1:1 aspect ratio
     // const moonHeight = 176;   // Pixel size of moon image, 1:1 aspect ratio
 
@@ -14,27 +12,11 @@ function Background(props) {
     const moonParallaxRateY = .8;
 
     const calculateExtraPlanetOffset = () => {
-        return (Math.min(planetHeight, window.innerHeight) / 4);
+        return (Math.min(planetHeight, window.innerWidth) / 4);
     };
-
-    const calculateFinalOffset = () => {
-        return window.innerHeight - (titleHeight / 2) + calculateExtraPlanetOffset()
-    };
-
-    const calculateTitleBreakpoints = () => {
-        return [0, (window.innerHeight / 2) + calculateExtraPlanetOffset(), calculateFinalOffset()]
-    }
-
-    const calculatePlanetBreakpoints = () => {
-        return [0, calculateFinalOffset()];
-    }
 
     const calculateInitialTitleOffset = () => {
         return window.innerHeight / 2;
-    };
-
-    const calculateInitialPlanetOffset = () => {
-        return window.innerHeight + calculateExtraPlanetOffset();
     };
 
     const calculateInitialMoonOffsetX = () => {
@@ -46,20 +28,11 @@ function Background(props) {
     };
 
     const calculateTitleY = () => {
-        if (window.pageYOffset < calculateTitleBreakpoints()[1]) {
+        const scrollTitleOffset = calculateExtraPlanetOffset() + window.innerHeight / 2;
+        if (window.pageYOffset < scrollTitleOffset) {
             return calculateInitialTitleOffset();
-        } else if (window.pageYOffset >= calculateTitleBreakpoints()[1] && window.pageYOffset < calculateTitleBreakpoints()[2]) {
-            return calculateInitialTitleOffset() + calculateTitleBreakpoints()[1] - window.pageYOffset;
         } else {
-            return titleHeight / 2;
-        }
-    };
-
-    const calculatePlanetY = () => {
-        if (window.pageYOffset < calculatePlanetBreakpoints()[1]) {
-            return calculateInitialPlanetOffset() - window.pageYOffset;
-        } else {
-            return titleHeight / 2;
+            return calculateInitialTitleOffset() + scrollTitleOffset - window.pageYOffset;
         }
     };
 
@@ -80,12 +53,10 @@ function Background(props) {
         setMoonX(calculateMoonX);
         setMoonY(calculateMoonY);
 
-        setPlanetY(calculatePlanetY);
         setPlanetSize(Math.min(planetHeight, window.innerWidth));
     }
 
     const [titleY, setTitleY] = useState(calculateInitialTitleOffset());
-    const [planetY, setPlanetY] = useState(calculateInitialPlanetOffset());
     const [moonX, setMoonX] = useState(calculateInitialMoonOffsetX());
     const [moonY, setMoonY] = useState(calculateInitialMoonOffsetY());
     const [planetSize, setPlanetSize] = useState(planetHeight);
@@ -98,15 +69,23 @@ function Background(props) {
             window.removeEventListener("resize", setOffset);
             window.removeEventListener("scroll", setOffset);
         }
-    }, [setOffset]);
+    });
 
     return (
         <>
-            {/* <Nebula/> */}
-            <Title yCenter={titleY} titleHeight={titleHeight} />
-            <Planet yCenter={planetY} planetHeight={planetSize} />
+            <div style={{ height: (window.innerHeight / 2) + (planetSize / 4) }}></div>
+            <section className='full-pager' style={{
+                minHeight: planetSize,
+                height: window.innerHeight,
+                display: 'flex',
+                width: '100%',
+                justifyContent: 'center',
+                alignItems: 'center',
+            }}>
+                <Title yCenter={titleY} titleHeight={titleHeight} />
+                <Planet planetHeight={planetSize} offset={calculateInitialTitleOffset()} />
+            </section>
             <Moon yCenter={moonY} xCenter={moonX} />
-            <MagicArrow />
         </>
     );
 }

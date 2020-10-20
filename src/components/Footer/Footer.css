@@ -1,0 +1,14 @@
+.footer li {
+    flex-grow: 1;
+    list-style-type: none;
+}
+
+.footer a {
+    color: #f9de8f;
+    font-size: 10pt;
+}
+
+.footer li h1 {
+    color: #eee;
+    font-size: 12pt;
+}
