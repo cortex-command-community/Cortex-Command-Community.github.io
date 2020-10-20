@@ -3,15 +3,23 @@ import React from 'react';
 function MagicArrow(props) {
     const onClick = () => {
         const sections = [
-            { scrollTo: 'full-pager', viewCheck: 'full-pager'},
-            { scrollTo: 'scroll-anchor', viewCheck: 'card-container'},  
+            { scrollTo: 'full-pager', viewCheck: 'full-pager', block: 'center' },
+            { scrollTo: 'scroll-anchor', viewCheck: 'card-container', block: 'start' },
         ];
-        
+
         for (const section of sections) {
             const viewCheck = document.getElementsByClassName(section.viewCheck)[0];
-            if (viewCheck.getBoundingClientRect().bottom > window.innerHeight + 1) {
+            console.log(viewCheck.getBoundingClientRect(), window.innerHeight)
+            if (
+                viewCheck.getBoundingClientRect().bottom > window.innerHeight + 1 &&
+                // Ignore centered content on small screen sizes
+                !(
+                    viewCheck.getBoundingClientRect().bottom > window.innerHeight &&
+                    viewCheck.getBoundingClientRect().top < 0
+                )
+            ) {
                 const scrollTo = document.getElementsByClassName(section.scrollTo)[0];
-                scrollTo.scrollIntoView({ block: 'start', behavior: 'smooth' });
+                scrollTo.scrollIntoView({ block: section.block, behavior: 'smooth' });
                 break;
             }
         }
