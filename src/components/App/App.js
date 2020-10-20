@@ -9,10 +9,10 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <Switch>
-        <Route exact path="/">
+        <Route exact path={process.env.PUBLIC_URL + "/"}>
           <Home />
         </Route>
-        <Route path="/downloads">
+        <Route path={process.env.PUBLIC_URL + "/downloads"}>
           <Downloads />
         </Route>
         <Route>
