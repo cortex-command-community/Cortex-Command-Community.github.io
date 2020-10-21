@@ -1,7 +1,7 @@
 import React from 'react';
-import './CardContents.css';
+import './CortexCardContents.css';
 
-function CardContents(props) {
+function CortexCardContents(props) {
     return (
         <div className='card-contents' style={{ 
             display: 'flex', 
@@ -26,4 +26,4 @@ function CardContents(props) {
     );
 }
 
-export default CardContents;
+export default CortexCardContents;

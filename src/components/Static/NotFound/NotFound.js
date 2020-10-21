@@ -1,5 +1,5 @@
 import React from 'react';
-import Template from '../Template/Template';
+import Template from '../../Template/Template';
 
 function NotFound() {
     return (

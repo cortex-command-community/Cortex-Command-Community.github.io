@@ -1,9 +1,9 @@
 import React from 'react';
-import './CardContainer.css';
+import './CortexCardContainer.css';
 
-function CardContainer(props) {
+function CortexCardContainer(props) {
     return (
-        <div className="card-container" style={{
+        <div className="cortex-card-container" style={{
             display: 'flex',
             flexDirection: 'column',
             maxWidth: '800px',
@@ -14,4 +14,4 @@ function CardContainer(props) {
     );
 }
 
-export default CardContainer;
+export default CortexCardContainer;

@@ -4,7 +4,7 @@ function MagicArrow(props) {
     const onClick = () => {
         const sections = [
             { scrollTo: 'full-pager', viewCheck: 'full-pager', block: 'center' },
-            { scrollTo: 'scroll-anchor', viewCheck: 'card-container', block: 'start' },
+            { scrollTo: 'scroll-anchor', viewCheck: 'cortex-card-container', block: 'start' },
         ];
 
         for (const section of sections) {

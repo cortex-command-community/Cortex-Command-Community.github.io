@@ -1,9 +1,9 @@
 import React from 'react';
-import './Card.css';
+import './CortexCard.css';
 
-function Card(props) {
+function CortexCard(props) {
     return (
-        <div className='card' style={{
+        <div className='cortex-card' style={{
             display: 'flex',
             justifyContent: props.right ? 'flex-end' : 'flex-start',
         }}>
@@ -18,4 +18,4 @@ function Card(props) {
     );
 }
 
-export default Card;
+export default CortexCard;

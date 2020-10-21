@@ -4,7 +4,7 @@ import './Header.css';
 
 function Header() {
     return (
-        <div className='header' style={{
+        <div className='cortex-navigation' style={{
             borderTop: '4px solid #f9de8f',
             borderBottom: '1px solid black',
             boxSizing: 'border-box',

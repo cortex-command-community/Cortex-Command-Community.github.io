@@ -1,4 +1,4 @@
-.header li {
+.cortex-navigation li {
     flex-grow: 1;
     height: 100%;
     list-style-type: none;
@@ -7,11 +7,11 @@
     border-right: 1px solid #5c3e3e;
 }
 
-.header, .header li {
+.cortex-navigation, .cortex-navigation li {
     background-image: linear-gradient(rgba(74, 31, 25, 1) 25%,rgba(46, 10, 0, 1) 75%);
 }
 
-.header a {
+.cortex-navigation a {
     height: 100%;
     width: 100%;
     display: flex;
@@ -23,11 +23,11 @@
     text-transform: uppercase;
 }
 
-.header a:hover {
+.cortex-navigation a:hover {
     color: white;
 }
 
-.header a:focus {
+.cortex-navigation a:focus {
     outline: none;
     background-color: rgba(46, 10, 0, 1);
 }
