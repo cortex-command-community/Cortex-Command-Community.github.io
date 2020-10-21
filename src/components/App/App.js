@@ -3,16 +3,16 @@ import './App.css';
 import Home from '../Home/Home';
 import Downloads from '../Static/Downloads/Downloads';
 import NotFound from '../Static/NotFound/NotFound';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <Switch>
-        <Route exact path={process.env.PUBLIC_URL + "/"}>
+        <Route exact path="/">
           <Home />
         </Route>
-        <Route path={process.env.PUBLIC_URL + "/downloads"}>
+        <Route path="/downloads">
           <Downloads />
         </Route>
         <Route>
