@@ -3,7 +3,7 @@ import './App.css';
 import Home from '../Home/Home';
 import Downloads from '../Static/Downloads/Downloads';
 import NotFound from '../Static/NotFound/NotFound';
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
