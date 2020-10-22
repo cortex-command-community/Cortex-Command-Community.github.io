@@ -1,0 +1,43 @@
+.footer {
+    min-height: 200px;
+    height: 100%;
+    width: 100%;
+    background-color: #242424;
+    padding: 24px 12px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.footer li {
+    flex-grow: 1;
+    list-style-type: none;
+}
+
+.footer a {
+    color: #f9de8f;
+    font-size: 10pt;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer li h1 {
+    color: #eee;
+    font-size: 12pt;
+}
+
+.footer .footer-dirt {
+    margin: auto;
+    display: block;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 44px;
+    background-image: url('./dirt.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+}

@@ -1,22 +1,25 @@
 import React from 'react';
 import './App.css';
-import Background from '../Background/Background';
-import PageBody from '../PageBody/PageBody';
-
-const titleHeight = 161; // Pixel height of title image
+import Home from '../Home/Home';
+import Downloads from '../Static/Downloads/Downloads';
+import NotFound from '../Static/NotFound/NotFound';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Background titleHeight={titleHeight}></Background>
-      <section style={{
-        height: '100vh',
-      }}>
-      </section>
-      <section>
-        <PageBody titleHeight={titleHeight}/>
-      </section>
-    </>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/downloads">
+          <Downloads />
+        </Route>
+        <Route>
+          <NotFound />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
