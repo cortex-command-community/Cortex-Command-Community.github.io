@@ -27,9 +27,7 @@ function Footer() {
                     <li><a href='http://wiki.datarealms.com/Cortex_Command'><span>Wiki</span></a></li>
                 </ul>
             </div>
-            <div className='footer-dirt'>
-                <img src='./dirt.png' alt='' />
-            </div>
+            <div className='footer-dirt' />
         </div >
     );
 }

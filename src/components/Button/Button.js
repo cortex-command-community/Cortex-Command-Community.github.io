@@ -7,8 +7,9 @@ function Button(props) {
   const Tag = props.link ? 'a' : 'button';
 
   return (
-    <Tag className="button-element"
+    <Tag className='button-element'
       href={props.to}
+      target='_blank'
     >
       <span className='button-content'>{props.children}</span>
       { props.link && <FontAwesomeIcon icon={faExternalLinkAlt} /> }
