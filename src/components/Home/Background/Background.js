@@ -3,8 +3,6 @@ import Title from './Title/Title';
 import Moon from './planetoids/Moon';
 import Planet from './planetoids/Planet';
 
-const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
 function Background() {
     const titleHeight = 151; // Pixel height of title image
     const planetHeight = 550; // Pixel size of planet image, 1:1 aspect ratio
@@ -53,7 +51,6 @@ function Background() {
     const [moonX, setMoonX] = useState(calculateInitialMoonOffsetX());
     const [moonY, setMoonY] = useState(calculateInitialMoonOffsetY());
     const [planetSize, setPlanetSize] = useState(planetHeight);
-    const [resizeId, setResizeId] = useState(null);
 
     const setOffset = () => {
         setTitleY(calculateTitleY);
@@ -64,22 +61,13 @@ function Background() {
         setPlanetSize(Math.min(planetHeight, window.innerWidth));
     }
 
-    const handleMovement = () => {
-        if (isMobile) {  
-            clearTimeout(resizeId);
-            setResizeId(setTimeout(setOffset, 100));
-        } else {
-            setOffset();
-        }
-    }
-
     useEffect(() => {
-        window.addEventListener('resize', handleMovement)
-        window.addEventListener("scroll", handleMovement);
+        window.addEventListener('resize', setOffset)
+        window.addEventListener("scroll", setOffset);
 
         return () => {
-            window.removeEventListener("resize", handleMovement);
-            window.removeEventListener("scroll", handleMovement);
+            window.removeEventListener("resize", setOffset);
+            window.removeEventListener("scroll", setOffset);
         }
     });
 
