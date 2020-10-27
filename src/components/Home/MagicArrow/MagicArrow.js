@@ -9,7 +9,6 @@ function MagicArrow(props) {
 
         for (const section of sections) {
             const viewCheck = document.getElementsByClassName(section.viewCheck)[0];
-            console.log(viewCheck.getBoundingClientRect(), window.innerHeight)
             if (
                 viewCheck.getBoundingClientRect().bottom > window.innerHeight + 1 &&
                 // Ignore centered content on small screen sizes

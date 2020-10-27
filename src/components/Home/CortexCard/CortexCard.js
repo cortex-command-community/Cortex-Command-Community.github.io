@@ -7,9 +7,7 @@ function CortexCard(props) {
             display: 'flex',
             justifyContent: props.right ? 'flex-end' : 'flex-start',
         }}>
-            <div className='one' style={{
-                width: '80%',
-            }}>
+            <div className='one'>
                 <div className='two'>
                     {props.children}
                 </div>
