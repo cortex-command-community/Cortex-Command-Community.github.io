@@ -1,5 +1,13 @@
 .cortex-card .one {
     border: 4px solid #181c37;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+@media only screen and (max-width: 800px) {
+    .cortex-card .one {
+        width: 100%;
+    }
 }
 
 .cortex-card .two {

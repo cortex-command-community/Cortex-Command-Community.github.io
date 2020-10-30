@@ -47,6 +47,11 @@ function Background() {
         return calculateInitialMoonOffsetX() - moonParallaxRateX * window.pageYOffset;
     };
 
+    const [titleY, setTitleY] = useState(calculateInitialTitleOffset());
+    const [moonX, setMoonX] = useState(calculateInitialMoonOffsetX());
+    const [moonY, setMoonY] = useState(calculateInitialMoonOffsetY());
+    const [planetSize, setPlanetSize] = useState(planetHeight);
+
     const setOffset = () => {
         setTitleY(calculateTitleY);
 
@@ -55,11 +60,6 @@ function Background() {
 
         setPlanetSize(Math.min(planetHeight, window.innerWidth));
     }
-
-    const [titleY, setTitleY] = useState(calculateInitialTitleOffset());
-    const [moonX, setMoonX] = useState(calculateInitialMoonOffsetX());
-    const [moonY, setMoonY] = useState(calculateInitialMoonOffsetY());
-    const [planetSize, setPlanetSize] = useState(planetHeight);
 
     useEffect(() => {
         window.addEventListener('resize', setOffset)

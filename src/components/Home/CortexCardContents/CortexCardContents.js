@@ -19,7 +19,7 @@ function CortexCardContents(props) {
             <div style={{
                 border: '2px solid black',
                 backgroundColor: 'black',
-                height: '196px',
+                minHeight: '196px',
                 width: '196px',
             }} />
         </div>
