@@ -7,8 +7,7 @@ import CortexCardContainer from './CortexCardContainer/CortexCardContainer';
 import CortexCardContents from './CortexCardContents/CortexCardContents';
 import MagicArrow from './MagicArrow/MagicArrow';
 
-/*i pray to god (if there is one) that there is a beter way to go about this than just manually importing every images*/
-
+/*image imports*/
 import DummySquadImg from './img/Team.png'
 import JoystickImg from './img/Joystick.png'
 import BuymenuImg from './img/BuyMenu.png'
@@ -34,7 +33,7 @@ function Home() {
                             title='Upgraded Engine'
                             body='The source code has been enhanced to improve performance.'
                             image={DummySquadImg}
-                            alt='some dummies'
+                            alt='A Handdrawn/Pixelart Image of a Dummy Squad from Cortex Command.'
                         />
                     </CortexCard>
                     <CortexCard right>
@@ -42,7 +41,7 @@ function Home() {
                             right
                             title='New Content'
                             body='New weapons, characters, and scenes.' image={BuymenuImg}
-                            alt='a buy menu'
+                            alt='A Handdrawn/Pixelart Image of the Buy Menu from the smash hit game Cortex Command.'
                         />
                     </CortexCard>
                     <CortexCard>
@@ -50,7 +49,7 @@ function Home() {
                             title='Improved Strategic Gameplay'
                             body='The team has focused on accentuating the most satisfying gameplay elements.'
                             image={JoystickImg}
-                            alt='a joystick'
+                            alt='A Handdrawn/Pixelart Image of a Joystick, an input method that can be used to (ineffiecently) play Cortex Command.'
                         />
                     </CortexCard>
                 </CortexCardContainer>
