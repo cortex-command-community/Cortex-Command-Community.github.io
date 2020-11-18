@@ -2,7 +2,7 @@
     min-height: 200px;
     height: 100%;
     width: 100%;
-    background-color: #242424;
+    background-color: rgba(46, 10, 0, 1);
     padding: 24px 12px;
     box-sizing: border-box;
     position: relative;

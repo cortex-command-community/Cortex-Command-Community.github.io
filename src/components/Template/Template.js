@@ -12,8 +12,10 @@ function Template(props) {
       <Header />
       <div style={{
         margin: 'auto',
+        marginBottom: '0px',
         maxWidth: '800px',
         width: '100%',
+        height: '100%',
         flex: '1',
       }}>
         <div style={{ padding: '0 8px', }}>
