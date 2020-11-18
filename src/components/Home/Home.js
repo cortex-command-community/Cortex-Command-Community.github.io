@@ -41,7 +41,7 @@ function Home() {
                             right
                             title='New Content'
                             body='New weapons, characters, and scenes.' image={BuymenuImg}
-                            alt='A Handdrawn/Pixelart Image of the Buy Menu from the smash hit game Cortex Command.'
+                            alt='A Handdrawn/Pixelart Image of the Buy Menu from Cortex Command.'
                         />
                     </CortexCard>
                     <CortexCard>
