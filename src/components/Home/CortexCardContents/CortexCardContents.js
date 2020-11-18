@@ -23,7 +23,7 @@ function CortexCardContents(props) {
                 minHeight: '196px',
                 width: '196px',
         }}
-        src={props.image}
+        src={props.image} alt={props.alt}
         />    
         </div>
     );

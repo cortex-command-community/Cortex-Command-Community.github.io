@@ -34,6 +34,7 @@ function Home() {
                             title='Upgraded Engine'
                             body='The source code has been enhanced to improve performance.'
                             image={DummySquadImg}
+                            alt='some dummies'
                         />
                     </CortexCard>
                     <CortexCard right>
@@ -41,6 +42,7 @@ function Home() {
                             right
                             title='New Content'
                             body='New weapons, characters, and scenes.' image={BuymenuImg}
+                            alt='a buy menu'
                         />
                     </CortexCard>
                     <CortexCard>
@@ -48,6 +50,7 @@ function Home() {
                             title='Improved Strategic Gameplay'
                             body='The team has focused on accentuating the most satisfying gameplay elements.'
                             image={JoystickImg}
+                            alt='a joystick'
                         />
                     </CortexCard>
                 </CortexCardContainer>
