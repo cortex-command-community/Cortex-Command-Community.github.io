@@ -40,7 +40,8 @@ function Home() {
                         <CortexCardContents
                             right
                             title='New Content'
-                            body='New weapons, characters, and scenes.' image={BuymenuImg}
+                            body='New weapons, characters, and scenes.'
+                            image={BuymenuImg}
                             alt='A Handdrawn/Pixelart Image of the Buy Menu from Cortex Command.'
                         />
                     </CortexCard>
