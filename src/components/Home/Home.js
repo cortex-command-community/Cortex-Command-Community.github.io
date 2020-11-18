@@ -7,6 +7,12 @@ import CortexCardContainer from './CortexCardContainer/CortexCardContainer';
 import CortexCardContents from './CortexCardContents/CortexCardContents';
 import MagicArrow from './MagicArrow/MagicArrow';
 
+/*i pray to god (if there is one) that there is a beter way to go about this than just manually importing every images*/
+
+import DummySquadImg from './img/Team.png'
+import JoystickImg from './img/Joystick.png'
+import BuymenuImg from './img/BuyMenu.png'
+
 function Home() {
     return (
         <div style={{ backgroundColor: '#111'}}>
@@ -27,19 +33,21 @@ function Home() {
                         <CortexCardContents
                             title='Upgraded Engine'
                             body='The source code has been enhanced to improve performance.'
+                            image={DummySquadImg}
                         />
                     </CortexCard>
                     <CortexCard right>
                         <CortexCardContents
                             right
                             title='New Content'
-                            body='New weapons, characters, and scenes.'
+                            body='New weapons, characters, and scenes.' image={BuymenuImg}
                         />
                     </CortexCard>
                     <CortexCard>
                         <CortexCardContents
                             title='Improved Strategic Gameplay'
                             body='The team has focused on accentuating the most satisfying gameplay elements.'
+                            image={JoystickImg}
                         />
                     </CortexCard>
                 </CortexCardContainer>
