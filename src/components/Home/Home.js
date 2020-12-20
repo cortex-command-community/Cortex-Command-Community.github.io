@@ -10,7 +10,7 @@ import MagicArrow from './MagicArrow/MagicArrow';
 /*image imports*/
 import DummySquadImg from './img/Team.png'
 import JoystickImg from './img/Joystick.png'
-import BuymenuImg from './img/BuyMenu.png'
+import mystery from './img/mystery.png'
 
 function Home() {
     return (
@@ -41,8 +41,8 @@ function Home() {
                             right
                             title='New Content'
                             body='New weapons, characters, and scenes.'
-                            image={BuymenuImg}
-                            alt='A Handdrawn/Pixelart Image of the Buy Menu from Cortex Command.'
+                            image={mystery}
+                            alt='Silhouettes of new things in Cortex Command'
                         />
                     </CortexCard>
                     <CortexCard>
