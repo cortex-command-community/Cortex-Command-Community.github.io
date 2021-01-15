@@ -4,6 +4,9 @@ import './Footer.css';
 function Footer() {
     return (
         <div className='footer'>
+            <div className='footer-background'>
+                <div className='footer-dirt' />
+            </div>
             <div style={{
                 display: 'flex',
                 flexWrap: 'wrap',
@@ -11,6 +14,8 @@ function Footer() {
                 padding: '0',
                 maxWidth: '800px',
                 height: '100%',
+                position: 'relative',
+                zIndex: '1',
             }}>
                 <ul>
                     <li><h1>Community</h1></li>
@@ -28,7 +33,6 @@ function Footer() {
                     <li><a href='http://wiki.datarealms.com/Cortex_Command'><span>Wiki</span></a></li>
                 </ul>
             </div>
-            <div className='footer-dirt' />
         </div >
     );
 }
