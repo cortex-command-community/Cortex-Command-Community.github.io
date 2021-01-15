@@ -22,8 +22,6 @@
 .footer ul {
     margin: 0 24px 24px 0;
     padding: 12px;
-    /* background-color: #1855B2; */
-    /* background-color: rgba(36, 36, 36, .2); */
 }
 
 .footer li {
@@ -51,13 +49,11 @@
     display: block;
     top: 24px;
     position: absolute;
-    /* left: -720px; */
     left: 0;
     right: 0;
     height: 330px;
     background-image: url('./near.png');
     background-position: center;
-    /* background-repeat: repeat-x; */
     background-repeat: no-repeat;
     image-rendering: pixelated;
 }
