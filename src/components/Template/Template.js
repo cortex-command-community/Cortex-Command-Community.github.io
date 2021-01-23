@@ -16,7 +16,7 @@ function Template(props) {
         width: '100%',
         flex: '1',
       }}>
-        <div style={{ padding: '0 8px', }}>
+        <div style={{ padding: '48px 8px 0', }}>
           {props.children}
         </div>
       </div>

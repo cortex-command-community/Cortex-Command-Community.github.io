@@ -4,6 +4,7 @@ import Home from '../Home/Home';
 import Downloads from '../Static/Downloads/Downloads';
 import NotFound from '../Static/NotFound/NotFound';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { GetInvolved } from '../Static/GetInvolved/GetInvolved';
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
         </Route>
         <Route path="/downloads">
           <Downloads />
+        </Route>
+        <Route path="/get-involved">
+          <GetInvolved />
         </Route>
         <Route>
           <NotFound />
