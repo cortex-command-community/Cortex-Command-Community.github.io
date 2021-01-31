@@ -2,10 +2,26 @@
     min-height: 200px;
     height: 100%;
     width: 100%;
-    background-color: rgba(46, 10, 0, 1);
     padding: 24px 12px;
     box-sizing: border-box;
     position: relative;
+    overflow: hidden;
+    background-color: #242424
+}
+
+.footer .footer-background {
+    opacity: .5;
+    background-color: #181E28;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer ul {
+    margin: 0 24px 24px 0;
+    padding: 12px;
 }
 
 .footer li {
@@ -31,12 +47,12 @@
 .footer .footer-dirt {
     margin: auto;
     display: block;
-    bottom: 0;
+    top: 24px;
     position: absolute;
     left: 0;
     right: 0;
-    height: 44px;
-    background-image: url('./dirt.png');
+    height: 330px;
+    background-image: url('./near.png');
     background-position: center;
     background-repeat: no-repeat;
     image-rendering: pixelated;

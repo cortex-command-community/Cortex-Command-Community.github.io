@@ -16,5 +16,6 @@
 .button-element:hover {
     transition: all 0.2s ease-out;
     color: #eee;
-    background-color: #333;
+    background-color: #284673;
+    border-color: #284673;
 }
