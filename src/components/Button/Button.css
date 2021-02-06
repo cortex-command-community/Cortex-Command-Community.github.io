@@ -1,14 +1,15 @@
 .button-element {
     display: inline-block;
-    color: #333;
-    border: 1px solid #333;
-    padding: 6px 12px;
+    color: #DDD;
+    border: 1px solid #DDD;
+    padding: 6px 16px;
     border-radius: 4px;
     text-decoration: none;
+    margin-Right: 4px;
 }
 
 .button-content {
-    padding-right: 12px;
+    padding-right: 6px;
     font-family: "Montserrat", sans-serif;
 }
 

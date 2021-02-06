@@ -7,6 +7,11 @@ import CortexCardContainer from './CortexCardContainer/CortexCardContainer';
 import CortexCardContents from './CortexCardContents/CortexCardContents';
 import MagicArrow from './MagicArrow/MagicArrow';
 
+/*image imports*/
+import NewImg from './img/stuff.GIF'
+import SniperImg from './img/sniper.GIF'
+import IntenseImg from './img/crabs.GIF'
+
 function Home() {
     return (
         <div style={{ backgroundColor: '#111'}}>
@@ -27,6 +32,8 @@ function Home() {
                         <CortexCardContents
                             title='Upgraded Engine'
                             body='The source code has been enhanced to improve performance.'
+                            image={NewImg}
+                            alt=''
                         />
                     </CortexCard>
                     <CortexCard right>
@@ -34,12 +41,16 @@ function Home() {
                             right
                             title='New Content'
                             body='New weapons, characters, and scenes.'
+                            image={IntenseImg}
+                            alt=''
                         />
                     </CortexCard>
                     <CortexCard>
                         <CortexCardContents
                             title='Improved Strategic Gameplay'
                             body='The team has focused on accentuating the most satisfying gameplay elements.'
+                            image={SniperImg}
+                            alt=''
                         />
                     </CortexCard>
                 </CortexCardContainer>

@@ -13,15 +13,18 @@ function CortexCardContents(props) {
                 }}>
                     <h1>{props.title}</h1>
                     <p>{props.body}</p>
+                    
                 </div>
             </div>
             {/* This is an image placeholder **Imagine an Image** */}
-            <div style={{
+        <img style={{
                 border: '2px solid black',
                 backgroundColor: 'black',
                 minHeight: '196px',
                 width: '196px',
-            }} />
+        }}
+        src={props.image} alt={props.alt}
+        />    
         </div>
     );
 }

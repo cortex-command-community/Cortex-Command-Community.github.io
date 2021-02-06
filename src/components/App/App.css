@@ -1,6 +1,6 @@
 body {
-  color: #111;
-  background-color: #eee
+  color: #EEE;
+  background-color: #202020
 }
 
 p {
@@ -9,7 +9,7 @@ p {
 }
 
 h1, h2, h3 {
-  color: #284673;
+  color: #DDD;
   font-weight: normal;
   font-family: "Montserrat", sans-serif;
 }

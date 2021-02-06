@@ -28,7 +28,7 @@ function Header() {
             }}>
                 <li><NavLink to="/"><span>Home</span></NavLink></li>
                 <li><NavLink to="/downloads"><span>Downloads</span></NavLink></li>
-                <li><NavLink to="/get-involved"><span>Get Involved</span></NavLink></li>
+                <li><NavLink to="/get_involved"><span>Get Involved</span></NavLink></li>
             </ul>
         </div>
     );
