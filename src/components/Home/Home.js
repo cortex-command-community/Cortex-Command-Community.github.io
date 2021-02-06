@@ -8,9 +8,9 @@ import CortexCardContents from './CortexCardContents/CortexCardContents';
 import MagicArrow from './MagicArrow/MagicArrow';
 
 /*image imports*/
-import NewImg from './img/newthings.png'
-import SniperImg from './img/strats.png'
-import IntenseImg from './img/intense.png'
+import NewImg from './img/stuff.GIF'
+import SniperImg from './img/sniper.GIF'
+import IntenseImg from './img/crabs.GIF'
 
 function Home() {
     return (
@@ -33,7 +33,7 @@ function Home() {
                             title='Upgraded Engine'
                             body='The source code has been enhanced to improve performance.'
                             image={NewImg}
-                            alt='A Handdrawn/Pixelart Image of a Dummy Squad from Cortex Command.'
+                            alt=''
                         />
                     </CortexCard>
                     <CortexCard right>
@@ -42,7 +42,7 @@ function Home() {
                             title='New Content'
                             body='New weapons, characters, and scenes.'
                             image={IntenseImg}
-                            alt='Silhouettes of new things in Cortex Command'
+                            alt=''
                         />
                     </CortexCard>
                     <CortexCard>
@@ -50,7 +50,7 @@ function Home() {
                             title='Improved Strategic Gameplay'
                             body='The team has focused on accentuating the most satisfying gameplay elements.'
                             image={SniperImg}
-                            alt='A Handdrawn/Pixelart Image of a Joystick, an input method that can be used to (ineffiecently) play Cortex Command.'
+                            alt=''
                         />
                     </CortexCard>
                 </CortexCardContainer>
