@@ -26,7 +26,7 @@ function Downloads() {
           marginTop: '8px', marginBottom: '18px',
         }}>What is Cortex Command without <strong>MODS</strong>? Luckily, we've got you covered. There are 2 great ways to get mods and if neither of them suit your fancy, you can use the Legacy Mod Converter to convert mods from the Data Realms Fan Forums or the Steam Workshop!</p>
       
-        <Button link to='https://discord.gg/yuZvazK'>Discord <img width='14px' height='14px' marginBottom='-12px' src={EmojiGood}/></Button>
+        <Button link to='https://discord.gg/yuZvazK'>Community Discord <img width='14px' height='14px' marginBottom='-12px' src={EmojiGood}/></Button>
       
         <Button link to='https://cccp.mod.io/'>Mod.io</Button>    
       
