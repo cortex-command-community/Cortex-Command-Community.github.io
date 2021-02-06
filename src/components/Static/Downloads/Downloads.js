@@ -17,7 +17,7 @@ function Downloads() {
       
         <Button link to='https://github.com/cortex-command-community/Cortex-Command-Community-Project-Data/'>View on Github</Button>
       
-        <Button link to='https://github.com/cortex-command-community/Cortex-Command-Community-Project-Data/releases/download/v0.1.0-pre2/CCCP.v0.1.0-pre2.zip'>Download Pre 2 (.exe)(latest)</Button>
+        <Button link to='https://github.com/cortex-command-community/Cortex-Command-Community-Project-Data/releases/download/v0.1.0-pre3.0/Cortex.Command.zip'>Download Pre 3 (.exe)(latest)</Button>
       
       </Card>
       <h2>Mods</h2>
@@ -28,7 +28,7 @@ function Downloads() {
       
         <Button link to='https://discord.gg/yuZvazK'>Discord <img width='14px' height='14px' marginBottom='-12px' src={EmojiGood}/></Button>
       
-        <Button link to='https://cccp.mod.io/'>Mod.io (Coming Soon)</Button>    
+        <Button link to='https://cccp.mod.io/'>Mod.io</Button>    
       
       </Card>
       <h2>Modding Tools</h2>
@@ -37,7 +37,7 @@ function Downloads() {
           marginTop: '8px', marginBottom: '18px',
         }}>This project automates most of the conversion work required to convert the legacy Cortex Command mods into Cortex Command Community Project compatible mods.</p>
         <Button link to='https://github.com/cortex-command-community/Cortex-Command-Legacy-Mod-Converter'>View on Github</Button>
-        <Button link to='https://github.com/cortex-command-community/Cortex-Command-Legacy-Mod-Converter/archive/master.zip'>Download Source (.py)(latest)</Button>
+        <Button link to='https://github.com/cortex-command-community/Cortex-Command-Legacy-Mod-Converter/releases/download/pre3.0.2/_Mod.Converter.zip'>Download Source (.py)(latest)</Button>
       </Card>
       <Card title={'CCCP Bender'}>
         <p style={{
