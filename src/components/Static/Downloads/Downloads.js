@@ -6,7 +6,7 @@ import Button from '../../Button/Button';
 function Downloads() {
   return (
     <Template>
-      <h1 style={{ marginTop: '48px' }}>Downloads</h1>
+      <h1>Downloads</h1>
       <h2>Project Releases</h2>
       <Card title={'Cortex Command Community Project'}>
         <p style={{
