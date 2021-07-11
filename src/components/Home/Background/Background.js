@@ -83,7 +83,7 @@ function Background() {
                 alignItems: 'center',
             }}>
                 <Title yCenter={titleY} titleHeight={titleHeight} />
-                <Planet planetHeight={planetSize} offset={calculateInitialTitleOffset()} />
+                <Planet planetHeight={planetSize} />
             </section>
             <Moon yCenter={moonY} xCenter={moonX} />
         </>
