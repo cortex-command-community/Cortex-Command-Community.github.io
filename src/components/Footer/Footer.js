@@ -19,7 +19,6 @@ function Footer() {
             }}>
                 <ul>
                     <li><h1>Community</h1></li>
-//                    <li><a href='https://discord.com/invite/D2aGezA'>Community Discord</a></li> someday maybe
                     <li><a href='https://cccp.mod.io/'>CCCP Mod Portal</a></li>
                     <li><a href='http://forums.datarealms.com/'><span>DataRealms Fan Forums</span></a></li>
                 </ul>
