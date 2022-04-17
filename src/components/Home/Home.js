@@ -26,20 +26,20 @@ function Home() {
                     <CortexCard>
                         <CortexCardContents
                             title='Upgraded Engine'
-                            body='The source code has been enhanced to improve performance.'
+                            body='The source code has been enhanced to improve performance, modding support, and basic gameplay for a renewed experience. '
                         />
                     </CortexCard>
                     <CortexCard right>
                         <CortexCardContents
                             right
                             title='New Content'
-                            body='New weapons, characters, and scenes.'
+                            body='New weapons, characters, and scenes based on the original concept art and design, as well as original content designed by our team to fill in the missing gaps in the original concepts.'
                         />
                     </CortexCard>
                     <CortexCard>
                         <CortexCardContents
                             title='Improved Strategic Gameplay'
-                            body='The team has focused on accentuating the most satisfying gameplay elements.'
+                            body='The team has focused on accentuating the most satisfying gameplay elements, and making strategic choices matter more on the battlefield.'
                         />
                     </CortexCard>
                 </CortexCardContainer>
