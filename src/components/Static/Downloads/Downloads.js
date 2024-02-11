@@ -12,7 +12,7 @@ function Downloads() {
         <p style={{
           marginBottom: '18px',
         }}>This is where you can find the community's plans for Cortex Command's future. There'll be rebalancing, new weapons and units, and much more.</p>
-        <Button link to='https://github.com/cortex-command-community/Cortex-Command-Community-Project-Data/releases'>Releases</Button>
+        <Button link to='https://github.com/cortex-command-community/Cortex-Command-Community-Project/releases'>Releases</Button>
       </Card>
       <h2>Modding Tools</h2>
       <Card title={'Legacy Mod Converter'}>
