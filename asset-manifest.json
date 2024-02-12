@@ -1,23 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.5a383da8.chunk.css",
-    "main.js": "/static/js/main.1fc70ebf.chunk.js",
-    "main.js.map": "/static/js/main.1fc70ebf.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.3d45e8e5.js",
-    "runtime-main.js.map": "/static/js/runtime-main.3d45e8e5.js.map",
-    "static/js/2.badd6d64.chunk.js": "/static/js/2.badd6d64.chunk.js",
-    "static/js/2.badd6d64.chunk.js.map": "/static/js/2.badd6d64.chunk.js.map",
+    "main.css": "/static/css/main.4ecb9c0b.css",
+    "main.js": "/static/js/main.0bf227ac.js",
+    "static/media/near.png": "/static/media/near.1b412ab24c929838d590.png",
     "index.html": "/index.html",
-    "precache-manifest.e9af9754338921aa13388dbfc6c6eb0c.js": "/precache-manifest.e9af9754338921aa13388dbfc6c6eb0c.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.5a383da8.chunk.css.map": "/static/css/main.5a383da8.chunk.css.map",
-    "static/js/2.badd6d64.chunk.js.LICENSE.txt": "/static/js/2.badd6d64.chunk.js.LICENSE.txt",
-    "static/media/Footer.css": "/static/media/near.d4927317.png"
+    "main.4ecb9c0b.css.map": "/static/css/main.4ecb9c0b.css.map",
+    "main.0bf227ac.js.map": "/static/js/main.0bf227ac.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.3d45e8e5.js",
-    "static/js/2.badd6d64.chunk.js",
-    "static/css/main.5a383da8.chunk.css",
-    "static/js/main.1fc70ebf.chunk.js"
+    "static/css/main.4ecb9c0b.css",
+    "static/js/main.0bf227ac.js"
   ]
 }
