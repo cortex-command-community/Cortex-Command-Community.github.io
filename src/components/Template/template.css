@@ -1,0 +1,24 @@
+.layout-limits {
+	background-color: #161616;
+	flex-grow: 1;
+}
+
+.template-container {
+	margin: auto;
+	max-width: 800px;
+	width: 100%;
+	flex: 1;
+}
+.layout-limits h1 {
+	color: #ffffe0;
+}
+.layout-limits h2 {
+	color: #ffffe0;
+	background-color: #161616;
+}
+.layout-limits p {
+	color: #ffffe0;
+}
+.layout-limits a {
+	color: #ffa500;
+}

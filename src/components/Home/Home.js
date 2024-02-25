@@ -1,7 +1,6 @@
 import React from 'react';
 import Background from '../Home/Background/Background';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+
 import CortexCard from './CortexCard/CortexCard';
 import CortexCardContainer from './CortexCardContainer/CortexCardContainer';
 import CortexCardContents from './CortexCardContents/CortexCardContents';
@@ -11,7 +10,6 @@ function Home() {
     return (
         <div style={{ backgroundColor: '#111'}}>
             <div style={{ position: 'fixed', top: '0', zIndex: '1000', width: '100%' }}>
-                <Header />
             </div>
             <MagicArrow />
             <Background />
@@ -44,7 +42,6 @@ function Home() {
                     </CortexCard>
                 </CortexCardContainer>
                 <div style={{ height: '48px', }} />
-                <Footer />
             </div>
         </div>
     )

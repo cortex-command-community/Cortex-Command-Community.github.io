@@ -1,3 +1,9 @@
 .cortex-card-container .cortex-card:not(:first-child) {
-    margin-top: 48px;
+	margin-top: 48px;
+}
+.cortex-card-container {
+	display: flex;
+	flex-direction: column;
+	max-width: 800px;
+	margin: auto;
 }

@@ -1,23 +1,44 @@
+*::after,
+*::before,
+* {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
 body {
-  color: #111;
-  background-color: #eee
+	color: #111;
+	background-color: #eee;
 }
 
 p {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
-h1, h2, h3 {
-  color: #284673;
-  font-weight: normal;
-  font-family: "Montserrat", sans-serif;
+h1,
+h2,
+h3 {
+	color: #284673;
+	font-weight: normal;
+	font-family: 'Montserrat', sans-serif;
 }
 
 ul {
-  margin: 0;
+	margin: 0;
+	padding: 0; /* added this line */
 }
 
-h1, h2, h3, h4, h5 {
-  margin-top: 0;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin-top: 0;
 }

@@ -3,20 +3,11 @@ import './Footer.css';
 
 function Footer() {
     return (
-        <div className='footer'>
+        <footer className='footer scroll-anchor'>
             <div className='footer-background'>
                 <div className='footer-dirt' />
             </div>
-            <div style={{
-                display: 'flex',
-                flexWrap: 'wrap',
-                margin: 'auto',
-                padding: '0',
-                maxWidth: '800px',
-                height: '100%',
-                position: 'relative',
-                zIndex: '1',
-            }}>
+            <div className='footer-content'>
                 <ul>
                     <li><h1>Community</h1></li>
                     <li><a href='https://discord.gg/invite/TSU6StNQUG'>Our Discord</a></li>
@@ -35,7 +26,7 @@ function Footer() {
                     <li><a href='https://github.com/cortex-command-community/Cortex-Command-Community-Project-Source/blob/development/CHANGELOG.md'><span>CCCP Changelog</span></a></li>
                 </ul>
             </div>
-        </div >
+        </footer >
     );
 }
 

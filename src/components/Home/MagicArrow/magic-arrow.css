@@ -1,0 +1,14 @@
+.arrow-container {
+	position: fixed;
+	bottom: 20px;
+	width: 100%;
+	z-index: 100;
+}
+.arrow-btn {
+	border: 0;
+	padding: 0;
+	background-color: transparent;
+	margin: auto;
+	display: block;
+	cursor: pointer;
+}
