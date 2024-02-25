@@ -10,11 +10,11 @@
 .button-content {
     padding-right: 12px;
     font-family: "Montserrat", sans-serif;
+    font-weight: 700;
 }
 
 .button-element:hover {
     transition: all 0.2s ease-out;
-    color: #eee;
-    background-color: #284673;
-    border-color: #284673;
+    color: #333;
+    background-color: #ffa500;
 }

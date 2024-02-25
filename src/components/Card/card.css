@@ -1,7 +1,11 @@
 .card-element {
-	/* padding: 24px 0; */
 	margin: 48px 0;
 }
+
+.card-element:last-of-type {
+	margin: 0;
+}
+
 .card-content {
 	margin-top: 12px;
 	border: 1px solid #333;

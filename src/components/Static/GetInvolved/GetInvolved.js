@@ -1,5 +1,6 @@
 import React from 'react';
 import Template from '../../Template/Template';
+import './get-involved-link.css';
 
 export const GetInvolved = () => {
 	return (
@@ -20,10 +21,19 @@ export const GetInvolved = () => {
 				definitely use more dedicated playtesters and help with balancing
 				everything (especially as the project gets farther along), so if you'd
 				like to join in, we'd be happy to have you. If you{' '}
-				<a href="https://discord.gg/TSU6StNQUG" target="_blank" rel="noreferrer" >join us in Discord,</a> we can
-				help you get everything set up so you can contribute to the glory of the
-				CCCP!
+				<a
+					className="get-involved-link"
+					href="https://discord.gg/TSU6StNQUG"
+					target="_blank"
+					rel="noreferrer"
+				>
+					join us in Discord,
+				</a>{' '}
+				we can help you get everything set up so you can contribute to the glory
+				of the CCCP!
 			</p>
+			<br />
+			<br />
 		</Template>
 	);
 };

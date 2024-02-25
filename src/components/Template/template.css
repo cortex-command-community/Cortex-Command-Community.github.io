@@ -2,7 +2,9 @@
 	background-color: #161616;
 	flex-grow: 1;
 }
-
+.template-content {
+	padding: 48px 8px 0;
+}
 .template-container {
 	margin: auto;
 	max-width: 800px;
