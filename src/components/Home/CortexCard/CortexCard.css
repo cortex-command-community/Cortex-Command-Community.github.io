@@ -5,6 +5,9 @@
 }
 
 @media only screen and (max-width: 800px) {
+    .cortex-card {
+        padding: 0 16px;
+    }
     .cortex-card .one {
         width: 100%;
     }

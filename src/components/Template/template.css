@@ -1,5 +1,5 @@
 .layout-limits {
-	background-color: #161616;
+	background-color: #111; /* #161616 looks fine as well but doesn't match with the main page */
 	flex-grow: 1;
 }
 .template-content {
@@ -16,11 +16,17 @@
 }
 .layout-limits h2 {
 	color: #ffffe0;
-	background-color: #161616;
+	background-color: #111;
 }
 .layout-limits p {
 	color: #ffffe0;
 }
 .layout-limits a {
 	color: #ffa500;
+}
+
+@media (max-width: 820px) {
+	.template-content {
+		padding: 48px 16px 0
+	}
 }
