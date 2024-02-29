@@ -1,20 +1,20 @@
 .button-element {
-    display: inline-block;
-    color: #333;
-    border: 1px solid #333;
-    padding: 6px 12px;
-    border-radius: 4px;
-    text-decoration: none;
+	display: inline-block;
+	color: #333;
+	border: 1px solid #333;
+	padding: 6px 12px;
+	border-radius: 4px;
+	text-decoration: none;
 }
 
 .button-content {
-    padding-right: 12px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+	padding-right: 12px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
 }
 
 .button-element:hover {
-    transition: all 0.2s ease-out;
-    color: #333;
-    background-color: #ffa500;
+	transition: all 0.2s ease-out;
+	color: #333;
+	background-color: #ffa500;
 }

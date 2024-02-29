@@ -6,7 +6,7 @@ import CortexCardContainer from './CortexCardContainer/CortexCardContainer';
 import CortexCardContents from './CortexCardContents/CortexCardContents';
 import MagicArrow from './MagicArrow/MagicArrow';
 
-import gif1 from './assets/content-laden.gif';
+import gif1 from './assets/content-laden-full.gif';
 import gif2 from './assets/new-content.gif';
 import gif3 from './assets/improved-gameplay.gif';
 
