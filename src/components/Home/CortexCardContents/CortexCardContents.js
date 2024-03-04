@@ -10,7 +10,7 @@ function CortexCardContents({ right, title, body, file }) {
 			setImageLoaded(true);
 		};
 		img.src = file;
-	}, []);
+	}, [file]);
 
 	return (
 		<div className={`card-contents ${right ? 'card-contents--reverse' : ''}`}>
