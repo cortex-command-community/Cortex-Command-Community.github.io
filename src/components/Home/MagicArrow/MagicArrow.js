@@ -1,48 +1,59 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import './magic-arrow.css';
 
-function MagicArrow(props) {
-    const onClick = () => {
-        const sections = [
-            { scrollTo: 'full-pager', viewCheck: 'full-pager', block: 'center' },
-            { scrollTo: 'scroll-anchor', viewCheck: 'cortex-card-container', block: 'start' },
-        ];
+function MagicArrow() {
+	const [showArrow, setShowArrow] = useState(true);
+	// check if the arrow has reached footer
+	useEffect(() => {
+		const footer = document.querySelector('.footer');
+		const handleShowingArrow = () => {
+			if (
+				window.innerHeight + window.scrollY >=
+				document.body.offsetHeight - footer.scrollHeight
+			) {
+				setShowArrow(false);
+			} else {
+				setShowArrow(true);
+			}
+		};
 
-        for (const section of sections) {
-            const viewCheck = document.getElementsByClassName(section.viewCheck)[0];
-            if (
-                viewCheck.getBoundingClientRect().bottom > window.innerHeight + 1 &&
-                // Ignore centered content on small screen sizes
-                !(
-                    viewCheck.getBoundingClientRect().bottom > window.innerHeight &&
-                    viewCheck.getBoundingClientRect().top < 0
-                )
-            ) {
-                const scrollTo = document.getElementsByClassName(section.scrollTo)[0];
-                scrollTo.scrollIntoView({ block: section.block, behavior: 'smooth' });
-                break;
-            }
-        }
-    };
+		window.addEventListener('scroll', handleShowingArrow);
 
-    return (
-        <div style={{
-            position: 'fixed',
-            bottom: '20px',
-            width: '100%',
-            zIndex: '100',
-        }}>
-            <button onClick={onClick} style={{
-                border: '0',
-                padding: '0',
-                backgroundColor: 'transparent',
-                margin: 'auto',
-                display: 'block',
-                cursor: 'pointer'
-            }}>
-                <img src="./arrow.gif" alt="Scroll to content" />
-            </button>
-        </div>
-    );
+		return () => window.removeEventListener('scroll', handleShowingArrow);
+	}, []);
+
+	const handleScroll = () => {
+		const sections = [
+			{ scrollTo: 'full-pager', viewCheck: 'full-pager', block: 'center' },
+			{
+				scrollTo: 'scroll-anchor',
+				viewCheck: 'cortex-card-container',
+				block: 'start',
+			},
+		];
+
+		for (const section of sections) {
+			const viewCheck = document.querySelector(`.${section.viewCheck}`);
+
+			if (viewCheck.getBoundingClientRect().bottom > window.innerHeight + 1) {
+				const scrollTo = document.querySelector(`.${section.scrollTo}`);
+				scrollTo.scrollIntoView({ block: section.block, behavior: 'smooth' });
+				break;
+			}
+		}
+	};
+
+	return (
+		<>
+			{showArrow && (
+				<div className="arrow-container">
+					<button onClick={handleScroll} className="arrow-btn">
+						<img src="./arrow.gif" alt="Scroll to content" />
+					</button>
+				</div>
+			)}
+		</>
+	);
 }
 
 export default MagicArrow;

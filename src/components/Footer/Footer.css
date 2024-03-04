@@ -1,59 +1,81 @@
 .footer {
-    min-height: 200px;
-    height: 100%;
-    width: 100%;
-    padding: 24px 12px;
-    box-sizing: border-box;
-    position: relative;
-    overflow: hidden;
-    background-color: #242424
+	min-height: 200px;
+	height: 100%;
+	width: 100%;
+	padding: 24px 16px;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+	background-color: #242424;
 }
 
 .footer .footer-background {
-    opacity: .5;
-    background-color: #181E28;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+	opacity: 0.5;
+	background-color: #181e28;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .footer ul {
-    margin: 0 24px 24px 0;
-    padding: 12px;
+	/* margin: 0 24px 24px 0; */
+	/* padding: 12px; */
 }
 
 .footer li {
-    flex-grow: 1;
-    list-style-type: none;
+	flex-grow: 1;
+	list-style-type: none;
 }
 
 .footer a {
-    color: #f9de8f;
-    font-size: 10pt;
-    text-decoration: none;
+	color: #f9de8f;
+	font-size: 10pt;
+	text-decoration: none;
 }
 
 .footer a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 .footer li h1 {
-    color: #eee;
-    font-size: 12pt;
+	color: #eee;
+	font-size: 12pt;
 }
 
 .footer .footer-dirt {
-    margin: auto;
-    display: block;
-    top: 24px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 330px;
-    background-image: url('./near.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    image-rendering: pixelated;
+	margin: auto;
+	display: block;
+	top: 24px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 330px;
+	background-image: url('./near.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	image-rendering: pixelated;
+}
+
+.footer-content {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	padding: 0;
+	max-width: 800px;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+	justify-content: space-between;
+	gap: 36px;
+}
+
+@media (max-width: 518px) {
+	.footer-content {
+		justify-content: center;
+	}
+	.footer-content ul {
+		width: 166px;
+	}
 }

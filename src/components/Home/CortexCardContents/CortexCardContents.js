@@ -1,29 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './CortexCardContents.css';
 
-function CortexCardContents(props) {
-    return (
-        <div className='card-contents' style={{ 
-            display: 'flex', 
-            flexDirection: props.right ? 'row-reverse' : 'initial',
-        }}>
-            <div style={{ flex: '1' }}>
-                <div style={{ 
-                    padding: '8px 16px',
-                }}>
-                    <h1>{props.title}</h1>
-                    <p>{props.body}</p>
-                </div>
-            </div>
-            {/* This is an image placeholder **Imagine an Image** */}
-            <div style={{
-                border: '2px solid black',
-                backgroundColor: 'black',
-                minHeight: '196px',
-                width: '196px',
-            }} />
-        </div>
-    );
+function CortexCardContents({ right, title, body, file }) {
+	const [imageLoaded, setImageLoaded] = useState(false);
+
+	useEffect(() => {
+		const img = new Image();
+		img.onload = () => {
+			setImageLoaded(true);
+		};
+		img.src = file;
+	}, []);
+
+	return (
+		<div className={`card-contents ${right ? 'card-contents--reverse' : ''}`}>
+			<div style={{ flex: '1' }}>
+				<div
+					style={{
+						padding: '8px 16px',
+					}}
+				>
+					<h1>{title}</h1>
+					<p>{body}</p>
+				</div>
+			</div>
+			{/* This is an image placeholder **Imagine an Image** */}
+			<div className="image-placeholder">
+				{imageLoaded ? (
+					<img src={file} alt="advantages gif" />
+				) : (
+					<div className="loading-container">Loading...</div>
+				)}
+			</div>
+		</div>
+	);
 }
 
 export default CortexCardContents;

@@ -3,12 +3,7 @@ import './CortexCardContainer.css';
 
 function CortexCardContainer(props) {
     return (
-        <div className="cortex-card-container" style={{
-            display: 'flex',
-            flexDirection: 'column',
-            maxWidth: '800px',
-            margin: 'auto',
-        }}>
+        <div className="cortex-card-container" >
             {props.children}
         </div>
     );

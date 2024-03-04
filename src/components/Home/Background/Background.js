@@ -73,7 +73,7 @@ function Background() {
 
     return (
         <>
-            <div style={{ height: (window.innerHeight / 2) + (planetSize / 4) }}></div>
+            <div style={{ height: (window.innerHeight / 2.3) + (planetSize / 4) }}></div>
             <section className='full-pager' style={{
                 minHeight: planetSize,
                 height: window.innerHeight,

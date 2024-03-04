@@ -1,24 +1,15 @@
 import React from 'react';
+import './card.css'
 
-function Card(props) {
-  return (
-    <div style={{ margin: '48px 0'}}>
-      <div style={{
-        marginTop: '12px',
-        border: '1px solid #333',
-        padding: '12px 18px',
-        borderRadius: '6px',
-      }}>
-        <h2 style={{
-          marginTop: '-28px',
-          padding: '0 4px',
-          width: 'fit-content',
-          background: '#eee',
-        }}>{props.title}</h2>
-        {props.children}
-      </div>
-    </div>
-  );
+function Card({ title, children }) {
+	return (
+		<div className='card-element'>
+			<div className="card-content">
+				<h2 className="card-name">{title}</h2>
+				{children}
+			</div>
+		</div>
+	);
 }
 
 export default Card;
